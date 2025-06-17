@@ -1,13 +1,27 @@
+// module.exports = ({ env }) => ({
+//   upload: {
+//     config: {
+//       provider: 'supabase',
+//       providerOptions: {
+//         supabaseUrl: env('SUPABASE_URL'),
+//         supabaseKey: env('SUPABASE_SERVICE_ROLE_KEY'),
+//         bucket: env('SUPABASE_BUCKET'),
+//         directory: 'uploads',
+//       },
+//     },
+//   },
+// });
+
 module.exports = ({ env }) => ({
   upload: {
     config: {
-      provider: 'supabase',
+      provider: 'cloudinary',
       providerOptions: {
-        supabaseUrl: env('SUPABASE_URL'),
-        supabaseKey: env('SUPABASE_SERVICE_ROLE_KEY'),
-        bucket: env('SUPABASE_BUCKET'),
-        directory: 'uploads',
+        cloud_name: env('CLOUDINARY_NAME'),
+        api_key: env('CLOUDINARY_KEY'),
+        api_secret: env('CLOUDINARY_SECRET'),
       },
     },
   },
 });
+
