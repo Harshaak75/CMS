@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navbar_stylings",
+  "info": {
+    "singularName": "navbar-styling",
+    "pluralName": "navbar-stylings",
+    "displayName": "Navbar Styling"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fontSize": {
+      "type": "enumeration",
+      "enum": [
+        "text-xs",
+        "text-sm",
+        "text-base",
+        "text-lg",
+        "text-xl",
+        "text-2xl",
+        "text-3xl",
+        "text-4xl"
+      ]
+    },
+    "fontWeight": {
+      "type": "enumeration",
+      "enum": [
+        "font-thin",
+        "font-extralight",
+        "font-light",
+        "font-normal",
+        "font-medium",
+        "font-semibold",
+        "font-bold",
+        "font-extrabold",
+        "font-black"
+      ]
+    },
+    "NavLabel": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "MEN",
+        "WOMEN",
+        "GENZ",
+        "KIDS"
+      ]
+    },
+    "NavItems": {
+      "type": "string"
+    }
+  }
+}

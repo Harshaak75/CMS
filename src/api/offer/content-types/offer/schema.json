@@ -1,17 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "banner1s",
+  "collectionName": "offers",
   "info": {
-    "singularName": "banner1",
-    "pluralName": "banner1s",
-    "displayName": "Banner1"
+    "singularName": "offer",
+    "pluralName": "offers",
+    "displayName": "Offer"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "MainBanner": {
+    "OfferBanner": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -21,17 +21,14 @@
         "audios"
       ]
     },
-    "bannerType": {
+    "OfferList": {
       "type": "enumeration",
       "enum": [
-        "HOME",
-        "OFFER",
-        "FOOTER",
-        "SIDEBAR",
-        "ABOUT"
+        "FirstOffer",
+        "SecondOffer"
       ]
     },
-    "label": {
+    "OfferLabel": {
       "type": "string",
       "required": true
     }

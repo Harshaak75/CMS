@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carasoals",
+  "info": {
+    "singularName": "carasoal",
+    "pluralName": "carasoals",
+    "displayName": "Carousel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CarouselImage": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "CarouselValue": {
+      "type": "enumeration",
+      "enum": [
+        "Carasoal1",
+        "Carasoal2",
+        "Carasoal3",
+        "Carasoal4",
+        "Carasoal5",
+        "Carasoal6",
+        "Carasoal7",
+        "Carasoal8",
+        "Carasoal9"
+      ]
+    }
+  }
+}
